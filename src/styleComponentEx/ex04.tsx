@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled, { keyframes } from "styled-components";
 
 const Wrapper = styled.div`
@@ -15,11 +15,12 @@ const Title = styled.h1`
 `;
 
 function App() {
+
     return (
         <Wrapper>
             <Title>Hello</Title>
         </Wrapper>
-    );
+    )
 }
 
 export default App;
