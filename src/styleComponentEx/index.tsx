@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
-import App from './App';
+import Ex from './ex01';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 const darkTheme = {
     textColor: "whitesmoke",
     backgroundColor: "#111"
@@ -15,7 +15,7 @@ const lightTheme = {
 root.render(
     <React.StrictMode>
         <ThemeProvider theme={lightTheme}>
-            <App />
+            <Ex />
         </ThemeProvider>
     </React.StrictMode>
 );

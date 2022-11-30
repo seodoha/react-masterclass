@@ -6,7 +6,7 @@ const Father = styled.div`
 `;
 
 const Box = styled.div`
-    background-color: ${(props) => props.bgColor};
+    background-color: ${(props) => props.color};
     width: 100px;
     height: 100px;
 `;
@@ -19,8 +19,8 @@ function App() {
 
     return (
         <Father>
-            <Box bgColor="teal" />
-            <Circle bgColor="tomato" />
+            <Box color="teal" />
+            <Circle color="tomato" />
         </Father>
     )
 }
