@@ -1,15 +1,14 @@
 import { Link, useSearchParams } from "react-router-dom";
-import { users } from "./../db";
+import { users } from "../db";
 
 function Home() {
     const [readSearchParams, setSearchParams] = useSearchParams();
-    console.log("🚀 ~ file: Home.tsx:6 ~ Home ~ readSearchParams", readSearchParams.get("geo"));
-    setTimeout(() => {
-        setSearchParams({
-            day: "today",
-            tomorrow: "123",
-        });
-    }, 3000);
+    // setTimeout(() => {
+    //     setSearchParams({
+    //         day: "today",
+    //         tomorrow: "123",
+    //     });
+    // }, 3000);
     return (
         <div>
             <h1>Users</h1>
