@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, Outlet, Route, Routes, useLocation, useMatch, useNavigate, useParams, useResolvedPath } from "react-router-dom";
+import { BrowserRouter, Link, Outlet, Route, Routes, useLocation, useMatch, useNavigate, useParams, useResolvedPath } from "react-router-dom";
 import styled from "styled-components";
 // import Chart from "./Chart";
 // import Price from "./Price";
@@ -217,7 +217,7 @@ function Coin() {
                         </Tab>
                     </Tabs>
 
-                    <Outlet context={{ coinId: coinId }} />
+                    <Outlet context={{ coinId }} />
                 </>
             )}
         </Container>

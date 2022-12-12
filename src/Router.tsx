@@ -23,11 +23,11 @@ const router = createBrowserRouter([
                 children: [
                     {
                         path: "chart",
-                        element: <Chart coinId={`:coinId`} />,
+                        element: <Chart />,
                     },
                     {
                         path: "price",
-                        element: <Price coinId={`:coinId`} />,
+                        element: <Price />,
                     },
                 ],
             },

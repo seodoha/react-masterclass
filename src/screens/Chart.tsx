@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useOutletContext, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { fetchCoinHistory } from "../api";
 import ApexChart from "react-apexcharts";
@@ -20,7 +20,8 @@ interface IHistorical {
     error?: any;
 }
 
-function Chart({ coinId }: ChartProps) {
+function Chart() {
+    const { coinId } = useOutletContext<ChartProps>();
     const { isLoading, data } = useQuery<IHistorical[]>(["ohlcv", coinId], () => fetchCoinHistory(coinId), {
         refetchInterval: 10000,
     });
